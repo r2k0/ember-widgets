@@ -1,0 +1,10 @@
+{{#each row in colorRows}}
+  <div class="color-row">
+    {{#each color in row}}
+    {{ view Ember.Widgets.ColorPickerSelectionCell
+      colorBinding ='color'
+	  classNames='color-picker-cell'
+     }}
+    {{/each}}
+  </div>
+{{/each}}

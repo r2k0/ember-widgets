@@ -1,0 +1,7 @@
+{{view Ember.Widgets.ColorPickerSelectedCell
+  colorBinding='view.selectedColor'
+  classNames='selected-cell color-picker-cell'
+}}
+{{#unless view.usePopOver}}
+  {{view Ember.Widgets.ColorPickerPalette}}
+{{/unless}}
